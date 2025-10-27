@@ -1,14 +1,15 @@
 # inventory
-Issue                  |  Type      |  Line(s)                    |  Description                                      |  Fix Approach                                      
------------------------+------------+-----------------------------+---------------------------------------------------+----------------------------------------------------
-Mutable default arg    |  Bug       |  12                         |  logs=[]shared across calls                       |  Change default toNoneand initialize in method     
-Missing docstring      |  Style     |  All                        |  No documentation for module or functions         |  Add informative docstrings to module and functions
-Naming not snake_case  |  Style     |  8, 14, 22, 25, 31, 36, 41  |  Function names use camelCase                     |  Rename functions tosnake_casethroughout           
-Bare except            |  Bug       |  19                         |  except:catches all exceptions and hides bugs     |  Useexcept KeyError:and handle explicitly          
-Insecureeval           |  Security  |  59                         |  eval()function can execute arbitrary code        |  Removeeval()and use direct function call          
-File handling          |  Style     |  26, 32                     |  Files opened without context manager & encoding  |  Usewith open(..., encoding="utf-8") as f:         
-Unused import          |  Style     |  2                          |  import loggingpresent but unused                 |  Remove unused import statement                    
-Missing blank lines    |  Style     |  8, 14, 22, ...             |  Less than 2 blank lines before/after funcs       |  Add 2 blank lines between top-level functions     
+| Issue               | Type    | Line(s)        | Description                                            | Fix Approach                                      |
+|---------------------|---------|----------------|--------------------------------------------------------|---------------------------------------------------|
+| Mutable default arg | Bug     | 12             | logs=[] shared across calls                            | Change default to None and initialize in method    |
+| Missing docstring   | Style   | All            | No documentation for module or functions               | Add informative docstrings                         |
+| Naming not snake_case | Style | 8, 14, 22, 25, 31, 36, 41 | Function names use camelCase          | Rename functions to snake_case throughout          |
+| Bare except         | Bug     | 19             | except: catches all exceptions and hides bugs          | Use except KeyError: and handle explicitly         |
+| Insecure eval       | Security| 59             | eval() function can execute arbitrary code             | Remove eval() and use direct function call         |
+| File handling       | Style   | 26, 32         | Files opened without context manager & encoding        | Use with open(..., encoding="utf-8") as f:         |
+| Unused import       | Style   | 2              | import logging present but unused                      | Remove unused import statement                     |
+| Missing blank lines | Style   | 8, 14, 22, ... | Less than 2 blank lines before/after funcs             | Add 2 blank lines between top-level functions      |
+    
 
 
 1. Which issues were the easiest to fix, and which were the hardest? Why?
