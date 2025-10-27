@@ -1,0 +1,11 @@
+inventory.py:2:1: F401 'logging' imported but unused
+inventory.py:8:1: E302 expected 2 blank lines, found 1
+inventory.py:14:1: E302 expected 2 blank lines, found 1
+inventory.py:19:5: E722 do not use bare 'except'
+inventory.py:22:1: E302 expected 2 blank lines, found 1
+inventory.py:25:1: E302 expected 2 blank lines, found 1
+inventory.py:31:1: E302 expected 2 blank lines, found 1
+inventory.py:36:1: E302 expected 2 blank lines, found 1
+inventory.py:41:1: E302 expected 2 blank lines, found 1
+inventory.py:48:1: E302 expected 2 blank lines, found 1
+inventory.py:61:1: E305 expected 2 blank lines after class or function definition, found 1
